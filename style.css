@@ -1,0 +1,73 @@
+html,body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+/* for header div */
+
+header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 90px;
+    opacity: 0.9;
+    border-bottom: 1px solid black;
+    background-color: rgb(255, 255, 255);
+}
+/* for main div */
+.mainDiv {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.FirstContainer {
+    display: flex;
+    
+}
+
+.FirstChild1 {
+    width: 50%;
+    height: 500px;
+}
+
+.FirstChild2 {
+    width: 50%;
+}
+
+.myimage {
+    width: 100%;
+    border-radius: 50%;
+}
+
+h1 {
+    margin: 0%;
+}
+
+/* for footer div */
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+}
+
+/* for flex 900px*/
+
+@media (max-width:1000px) {
+
+    .FirstContainer {
+        
+        flex-direction: column;
+        
+    }
+    .FirstChild1 {
+        width: 100%;
+    }
+
+    .FirstChild2 {
+        width: 100%;
+    }
+    
+}
