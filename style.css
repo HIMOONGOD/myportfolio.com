@@ -1,7 +1,7 @@
 html,body {
     margin: 0%;
     padding: 0%;
-    width: 100%;
+    
 }
 
 /* for header div */
@@ -10,14 +10,47 @@ header {
     position: sticky;
     top: 0px;
     width: 100%;
-    height: 90px;
+    height: 80px;
     opacity: 0.9;
+    
     border-bottom: 1px solid black;
     background-color: rgb(255, 255, 255);
 }
+
+.header {
+   
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moon {
+    width: 70px;
+    height: 70px;
+    text-indent: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: grey;
+    transition: 10s;
+}
+.moon2 {
+    
+    transform: translateX(300%) rotateZ(360deg);
+    
+}
+.aDiv {
+    padding: 10px;
+}
+
+
+
 /* for main div */
 .mainDiv {
-    width: 100%;
+    max-width: 100%;
     padding: 10px;
     background-color: rgb(255, 255, 255);
 }
@@ -30,6 +63,7 @@ header {
 .FirstChild1 {
     width: 50%;
     height: 500px;
+    padding: 20px;
 }
 
 .FirstChild2 {
