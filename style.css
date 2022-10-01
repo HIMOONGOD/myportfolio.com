@@ -1,11 +1,12 @@
-html,
-body {
+html,body {
   margin: 0%;
   padding: 0%;
   background-color: #ffffff;
   
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* for header div */
 
 header {
@@ -42,7 +43,14 @@ header {
   transform: translateX(300%) rotateZ(360deg);
 }
 .aDiv {
-  padding: 10px;
+  /* padding: 10px; */
+  width: 30%;
+}
+
+.hrefLink {
+  margin-left: 20px;
+  color: #121212;
+  text-decoration: none;
 }
 
 /* for main div */
@@ -68,7 +76,7 @@ header {
 
 .myimage {
   width: 100%;
-  border-radius: 50%;
+  
 }
 
 h1 {
@@ -77,6 +85,15 @@ h1 {
 
 .contactButton {
     
+}
+/* for projectPlace */
+
+.projectPlace {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #363940;
+  height: 100px;
 }
 /* for footer div */
 
@@ -92,10 +109,35 @@ footer {
   width: 500px;
   height: 300px;
   margin: 10px auto;
+  border-radius: 9px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: #363940;
+  box-shadow: 2px 2px 15px #121212;
+}
+
+
+
+.EmailCard::before {
+
+}
+
+.EmailForm {
+
+}
+
+.input {
+  border-radius: 5px;
+  outline: none;
+  background-color: #52575d;
+  margin: 10px auto;
+  display: block;
+}
+
+.label {
+  margin: 0 auto;
 }
 /* for flex 768*/
 
@@ -103,7 +145,14 @@ footer {
 
   html,body {
     width: 100vw;
+    
   
+  }
+
+  /* for header */
+  .aDiv {
+    /* padding: 10px; */
+    width: 50%;
   }
   .FirstContainer {
     flex-direction: column;
