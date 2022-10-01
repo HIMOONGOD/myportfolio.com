@@ -35,3 +35,11 @@ try {
 } catch (error) {
   console.log("err");
 }
+
+// for contact button
+
+const ContactTag = document.querySelector(".contactButton");
+
+ContactTag.addEventListener("click",() => {
+  
+})

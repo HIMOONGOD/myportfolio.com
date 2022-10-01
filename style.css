@@ -1,107 +1,128 @@
-html,body {
-    margin: 0%;
-    padding: 0%;
-    
+html,
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #ffffff;
 }
 
 /* for header div */
 
 header {
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    height: 80px;
-    opacity: 0.9;
-    
-    border-bottom: 1px solid black;
-    background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  opacity: 0.9;
+
+  border-bottom: 1px solid black;
+  background-color: rgb(255, 255, 255);
 }
 
 .header {
-   
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .moon {
-    width: 70px;
-    height: 70px;
-    text-indent: 1;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    background-color: grey;
-    transition: 10s;
+  width: 70px;
+  height: 70px;
+  text-indent: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: grey;
+  transition: 10s;
 }
 .moon2 {
-    
-    transform: translateX(300%) rotateZ(360deg);
-    
+  transform: translateX(300%) rotateZ(360deg);
 }
 .aDiv {
-    padding: 10px;
+  padding: 10px;
 }
-
-
 
 /* for main div */
 .mainDiv {
-    max-width: 100%;
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
+  max-width: 100%;
+  padding: 10px;
+  
 }
 
 .FirstContainer {
-    display: flex;
-    
+  display: flex;
 }
 
 .FirstChild1 {
-    width: 50%;
-    height: 500px;
-    padding: 20px;
+  width: 50%;
+  height: 500px;
+  padding: 20px;
 }
 
 .FirstChild2 {
-    width: 50%;
+  width: 50%;
 }
 
 .myimage {
-    width: 100%;
-    border-radius: 50%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 h1 {
-    margin: 0%;
+  margin: 0%;
 }
 
+.contactButton {
+    
+}
 /* for footer div */
 
 footer {
-    width: 100%;
-    height: 200px;
-    background-color: blue;
+  width: 100%;
+  height: fit-content;
+  background-color: #52575d;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-/* for flex 900px*/
+.EmailCard {
+  width: 500px;
+  height: 300px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #363940;
+}
+/* for flex 768*/
 
-@media (max-width:1000px) {
+@media (max-width: 768px) {
+  .FirstContainer {
+    flex-direction: column;
+  }
+  .FirstChild1 {
+    width: 100%;
+  }
 
-    .FirstContainer {
-        
-        flex-direction: column;
-        
-    }
-    .FirstChild1 {
-        width: 100%;
-    }
+  .FirstChild2 {
+    width: 100%;
+  }
 
-    .FirstChild2 {
-        width: 100%;
-    }
-    
+  /* for Footer */
+  .EmailCard {
+    width: 80%;
+  }
+}
+
+/* responsive 600px */
+
+@media (max-width: 600px) {
+  
+  /* for main div */
+
+  .h1 {
+    font-size: 25px;
+  }
 }
