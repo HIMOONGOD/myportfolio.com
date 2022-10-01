@@ -101,8 +101,8 @@ footer {
 
 @media (max-width: 768px) {
 
-  body {
-    
+  html,body {
+    width: 100vw;
   
   }
   .FirstContainer {
@@ -110,7 +110,16 @@ footer {
   }
   .FirstChild1 {
     width: 100%;
+    padding: 40px 0px;
+   
   }
+  /* .h1 {
+    width: fit-content;
+  }
+
+  .p1 {
+    width: fit-content;
+  } */
 
   .FirstChild2 {
     width: 100%;
