@@ -1,8 +1,8 @@
-html,body {
+html,
+body {
   margin: 0%;
   padding: 0%;
   background-color: #ffffff;
-  
 }
 html {
   scroll-behavior: smooth;
@@ -57,7 +57,6 @@ header {
 .mainDiv {
   max-width: 100%;
   padding: 10px;
-  
 }
 
 .FirstContainer {
@@ -76,7 +75,11 @@ header {
 
 .myimage {
   width: 100%;
-  
+}
+
+.img2 {
+  width: 100%;
+  display: none;
 }
 
 h1 {
@@ -84,16 +87,15 @@ h1 {
 }
 
 .contactButton {
-    
 }
 /* for projectPlace */
 
 .projectPlace {
+  height: fit-content;
   padding: 20px;
   text-align: center;
   color: #ffffff;
   background-color: #363940;
-  height: 100px;
 }
 /* for footer div */
 
@@ -118,14 +120,10 @@ footer {
   box-shadow: 2px 2px 15px #121212;
 }
 
-
-
 .EmailCard::before {
-
 }
 
 .EmailForm {
-
 }
 
 .input {
@@ -142,11 +140,9 @@ footer {
 /* for flex 768*/
 
 @media (max-width: 768px) {
-
-  html,body {
+  html,
+  body {
     width: 100vw;
-    
-  
   }
 
   /* for header */
@@ -160,7 +156,6 @@ footer {
   .FirstChild1 {
     width: 100%;
     padding: 40px 0px;
-   
   }
   /* .h1 {
     width: fit-content;
@@ -169,6 +164,16 @@ footer {
   .p1 {
     width: fit-content;
   } */
+
+  /* for main */
+
+  .myimage {
+    display: none;
+  }
+
+  .img2 {
+    display: block;
+  }
 
   .FirstChild2 {
     width: 100%;
@@ -183,7 +188,6 @@ footer {
 /* responsive 600px */
 
 @media (max-width: 600px) {
-  
   /* for main div */
 
   .h1 {
