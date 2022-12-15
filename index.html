@@ -19,36 +19,37 @@
         <div class="FirstChild1">
           <h1 class="h1">Hi , I'm <span class="autoType"></span></h1>
           <p class="p1">I am Newbie web programmer.</p>
-          
 
           <a href="#sendEmail"><button>contact me</button></a>
         </div>
         <div class="FirstChild2">
-          <img class="myimage" src="./myfile/myphoto2.png" />
-          <img class="img2" src="./myfile/myphoto3.png" />
+          
         </div>
       </div>
       <div class="projectPlace">
-        <p>My name is myo la min. I am beginner web programmer. I start learing programming in 8/1/2022.</p>
+        <p>
+          My name is myo la min. I am beginner web programmer. I start learing
+          programming in 8/1/2022.
+        </p>
         <p>!!This portfoilo is just for fun</p>
         <p>portfoilo version 0.6</p>
       </div>
 
       <!--      -->
     </div>
-    <footer id="sendEmail">
-      <div class="EmailCard">
-        <div class="EmailForm">
-          <label class="label" for="inputName">Input name</label>
-          <input class="input" id="inputName" />
-          <label class="label" for="inputName">Input Email</label>
-          <input class="input" id="inputEmail" />
-          <label class="label" for="inputName">Input Message</label>
-          <input class="input" id="inputMessage" />
-          <button class="input">Send Email</button>
-        </div>
-      </div>
-    </footer>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      const userEmail =  document.getElementById("inputEmail") ;
+      const userMessage = document.getElementById("inputMessage");
+      Email.send({
+        SecureToken: "46a871d4-a86a-4e19-9626-bd25c7d0af99",
+        To: "minla0249@gmail.com",
+        From: userEmail.value,
+        Subject: "contant",
+        Body: userMessage.value,
+      }).then((message) => alert(message));
+    </script>
     <script src="javascript.js"></script>
   </body>
 </html>
