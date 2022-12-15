@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>myportfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body>
     <header class="header">
-      <div class="moon">MOON</div>
+      <div class="fatherMoon">
+      </div>
+      <div id="moon"></div>
       <div class="aDiv">
         <a class="hrefLink" href="#Home">Home</a>
         <a class="hrefLink" href="#sendEmail">Contact Me</a>
@@ -37,19 +41,14 @@
 
       <!--      -->
     </div>
+
+    <div id="footerDiv"></div>
     
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      const userEmail =  document.getElementById("inputEmail") ;
-      const userMessage = document.getElementById("inputMessage");
-      Email.send({
-        SecureToken: "46a871d4-a86a-4e19-9626-bd25c7d0af99",
-        To: "minla0249@gmail.com",
-        From: userEmail.value,
-        Subject: "contant",
-        Body: userMessage.value,
-      }).then((message) => alert(message));
-    </script>
+    
+    
     <script src="javascript.js"></script>
+    <script >
+      // $("#moon").hide(3000)
+    </script>
   </body>
 </html>

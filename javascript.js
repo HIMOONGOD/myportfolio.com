@@ -1,19 +1,3 @@
-const startball = setTimeout(() => {
-  document.querySelector(".moon").classList.add("moon2");
-}, 1000);
-
-setTimeout(() => {
-  document.querySelector(".moon").classList.remove("moon2");
-}, 10000);
-
-setInterval(() => {
-  setTimeout(() => {
-    document.querySelector(".moon").classList.add("moon2");
-  }, 1000);
-  setTimeout(() => {
-    document.querySelector(".moon").classList.remove("moon2");
-  }, 10000);
-}, 14000);
 
 // For auto Typing
 
@@ -43,3 +27,11 @@ const ContactTag = document.querySelector(".contactButton");
 // ContactTag.addEventListener("click",() => {
   
 // })
+
+//with jquery
+
+$("#moon").hide(3000);
+
+setInterval(() => {
+  $("#moon").toggle(3000)
+},4000)
