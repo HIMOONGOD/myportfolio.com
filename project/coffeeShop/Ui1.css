@@ -1,0 +1,130 @@
+html,
+body {
+  margin: 0%;
+  padding: 0;
+}
+
+.head {
+  width: 100%;
+  height: 150px;
+  background-color: #dadce0;
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.imgDiv {
+  min-width: 100px;
+  width: 20%;
+  text-align: end;
+  margin-left: 10%;
+}
+
+.logo {
+  height: 85px;
+  width: 188px;
+  border-radius: 0px;
+}
+
+.menu {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
+div > a {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+div > a:hover {
+  color: #AF7C51;
+}
+
+/* for main div */
+
+/* for left side */
+
+.contentDiv {
+  padding: 20%;
+  box-sizing: border-box;
+}
+
+div > p {
+  /* Enjoy Our */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  
+  /* or 74px */
+  margin: 0 0 0 0;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+div > pre {
+  
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 184.5%;
+/* or 59px */
+
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+
+color: #AF7C51;
+margin-top: 0%;
+margin-left: 30%;
+
+
+}
+.brownColor {
+  color: #655750;
+}
+
+/* for right side */
+
+.mainDiv {
+  width: 100%;
+  height: 500px;
+  background-color: #292c30;
+  display: flex;
+}
+
+.Div {
+  width: 50%;
+  height: 100%;
+}
+
+.mainFirstDiv {
+}
+
+.mainSecondDiv {
+}
+
+
+/* for responsive  */
+@media (max-width:768px) {
+  /* for head */
+  .head {
+    flex-direction: column;
+  }
+
+  .menu {
+    width: 100%;
+  }
+}
