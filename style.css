@@ -1,107 +1,213 @@
-html,body {
-    margin: 0%;
-    padding: 0%;
-    
+html,
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #ffffff;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+/* for moon logo*/
+
+#moon {
+  width: 80px;
+  height: 90%;
+  margin: 0 auto;
+  background: radial-gradient(circle at 60% 60%, transparent 0%, rgb(245, 49, 19) 75%);
+  box-shadow: inset -2vmin 3vmin 3vmin #dd19199c, 1vmin 0 1vmin #bd470830,
+    -1vmin 0 1vmin #fd020230;
+  border-radius: 100%;
+}
+
 
 /* for header div */
 
 header {
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    height: 80px;
-    opacity: 0.9;
-    
-    border-bottom: 1px solid black;
-    background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  opacity: 0.9;
+
+  border-bottom: 1px solid black;
+  background-color: rgb(11, 8, 8);
 }
 
 .header {
-   
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.moon {
-    width: 70px;
-    height: 70px;
-    text-indent: 1;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    background-color: grey;
-    transition: 10s;
-}
-.moon2 {
-    
-    transform: translateX(300%) rotateZ(360deg);
-    
-}
 .aDiv {
-    padding: 10px;
+  /* padding: 10px; */
+  width: 30%;
 }
 
+.hrefLink {
+  margin-left: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
 
+.hrefLink:hover {
+  color: rgb(7, 22, 233);
+}
 
 /* for main div */
 .mainDiv {
-    max-width: 100%;
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
+  max-width: 100%;
+  padding: 10px;
 }
 
 .FirstContainer {
-    display: flex;
-    
+  display: flex;
 }
 
 .FirstChild1 {
-    width: 50%;
-    height: 500px;
-    padding: 20px;
+  width: 50%;
+  height: 500px;
+  padding: 20px;
+}
+
+.autoType {
+  color: #00ec00;
 }
 
 .FirstChild2 {
-    width: 50%;
+  width: 50%;
 }
 
 .myimage {
-    width: 100%;
-    border-radius: 50%;
+  width: 100%;
+}
+
+.img2 {
+  width: 100%;
+  display: none;
 }
 
 h1 {
-    margin: 0%;
+  margin: 0%;
 }
 
+.contactButton {
+}
+
+/* for projectRoom */
+
+.projectRoom {
+  height: 300px;
+  background-color: #7685a7;
+  border: black solid 1px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.fatherCardDiv {
+  position: relative;
+  height: 100%;
+}
+
+.projectCard {
+  width: 200px;
+  height: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  text-align: center;
+}
+
+.tumNail {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.pcardBody {
+  font-size: larger;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.gotoProject {
+  text-decoration: none;
+}
+
+
+/* for summary */
+
+.summary {
+  height: fit-content;
+  padding: 15x;
+  text-align: center;
+  color: #ffffff;
+  background-color: #363940;
+}
 /* for footer div */
 
-footer {
+/* for flex 768*/
+
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100vw;
+  }
+
+  /* for header */
+  .aDiv {
+    /* padding: 10px; */
+    width: 50%;
+  }
+  .FirstContainer {
+    flex-direction: column;
+  }
+  .FirstChild1 {
     width: 100%;
-    height: 200px;
-    background-color: blue;
+    padding: 40px 0px;
+  }
+  /* .h1 {
+    width: fit-content;
+  }
+
+  .p1 {
+    width: fit-content;
+  } */
+
+  /* for main */
+
+  .myimage {
+    display: none;
+  }
+
+  .img2 {
+    display: block;
+  }
+
+  .FirstChild2 {
+    width: 100%;
+  }
+
+  /* for Footer */
+ 
 }
 
-/* for flex 900px*/
+/* responsive 600px */
 
-@media (max-width:1000px) {
+@media (max-width: 600px) {
+  /* for main div */
 
-    .FirstContainer {
-        
-        flex-direction: column;
-        
-    }
-    .FirstChild1 {
-        width: 100%;
-    }
-
-    .FirstChild2 {
-        width: 100%;
-    }
-    
+  .h1 {
+    font-size: 25px;
+  }
 }
