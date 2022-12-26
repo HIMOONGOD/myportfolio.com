@@ -98,11 +98,58 @@ h1 {
 
 .contactButton {
 }
-/* for projectPlace */
 
-.projectPlace {
+/* for projectRoom */
+
+.projectRoom {
+  height: 300px;
+  background-color: #7685a7;
+  border: black solid 1px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.fatherCardDiv {
+  position: relative;
+  height: 100%;
+}
+
+.projectCard {
+  width: 200px;
+  height: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  text-align: center;
+}
+
+.tumNail {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.pcardBody {
+  font-size: larger;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.gotoProject {
+  text-decoration: none;
+}
+
+
+/* for summary */
+
+.summary {
   height: fit-content;
-  padding: 20px;
+  padding: 15x;
   text-align: center;
   color: #ffffff;
   background-color: #363940;
