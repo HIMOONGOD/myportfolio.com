@@ -158,6 +158,10 @@ margin-left: 30%;
     flex-direction: column;
   }
 
+  .imgDiv {
+    width: 50%;
+  }
+
   .menu {
     width: 100%;
   }
