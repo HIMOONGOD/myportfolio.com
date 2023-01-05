@@ -13,6 +13,7 @@ body {
   padding-top: 15px;
   box-sizing: border-box;
   flex-direction: row;
+  -webkit-user-select:none;
 }
 
 .imgDiv {
@@ -36,7 +37,7 @@ body {
   justify-content: space-around;
 }
 
-div > a {
+.arrow {
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
@@ -46,7 +47,7 @@ div > a {
   align-items: center;
 }
 
-div > a:hover {
+.arrow:hover {
   color: #AF7C51;
 }
 
@@ -133,7 +134,7 @@ margin-left: 30%;
 /* for right side */
 
 .mainDiv {
-  width: 100%;
+  width: 100%; 
   height: 500px;
   background-color: #292c30;
   display: flex;
@@ -148,6 +149,18 @@ margin-left: 30%;
 }
 
 .mainSecondDiv {
+}
+
+/* for menue div  */
+
+.menueDiv {
+  width: 100vw;
+  height: 300%;
+  background-color: #292c30;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
 }
 
 

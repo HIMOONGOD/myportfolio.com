@@ -1,0 +1,116 @@
+html,body {
+    margin: 0;
+    padding: 0%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+
+#main {
+    
+    
+}
+
+#addButtonDiv {
+    height: 100px;
+    background-color: rgb(110, 105, 105);
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    border: solid rgb(252, 248, 248) 1px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#addButton {
+    width: 90px;
+    height: 90px;
+    margin-top: 5px;
+    color: #fff;
+    background-color: black;
+    border-radius: 10px;
+    
+}
+
+/* for show room */
+#noteShowRoom {
+    height: 100%;
+    
+}
+
+.note {
+    width: 90%;
+    height: 100px;
+    margin: 0% auto;
+    background-color: rgb(242, 242, 246);
+    margin-top: 10px;
+    border: 2px black solid;
+    border-radius: 10px;
+    
+}
+
+.failNoteClick {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+/* inner note */
+
+.innerNote {
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+   
+    
+}
+
+.readerView {
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    padding: 20px;
+    
+}
+
+
+/* for text Area */
+
+.headWriteDiv {
+    height: 70px;
+}
+
+#saveAndExit{
+    width: 70px;
+    height: 100%;
+}
+
+.writeArea {
+    width: 100vw;
+    height: 100%;
+    background-color: aliceblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.textarea {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 2em;
+}
+/* for show display */
+
+.show {
+    display: block;
+}
