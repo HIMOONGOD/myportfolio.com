@@ -1,6 +1,6 @@
-let mainArray = [{title:"about app",text:"This app is created by Myo la min maung.↵↵version 0.1."},
+let  mainArray= [{title:"about app",text:"This app is created by Myo la min maung.↵↵version 0.1."},
 ]
-
+ 
 
 
 // for declarations
@@ -59,6 +59,14 @@ saveAndExitTag.addEventListener("click",() => {
 
 const reload = () => {
     
+if (mainArray == null) {
+    mainArray = [{title:"about app",text:"This app is created by Myo la min maung.↵↵version 0.1."},
+]
+localStorage.setItem("save",JSON.stringify(mainArray));
+    // mainArray = JSON.parse(localStorage.getItem("save"));
+} else {
+    
+}
 for (let i = 0; i < mainArray.length; i++) {
     const failNote = document.createElement("div");
     const failNoteClick = document.createElement("div");
