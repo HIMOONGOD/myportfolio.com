@@ -23,6 +23,16 @@ const titleTag = document.querySelector("#titleName");
 // for text area
 const textareaTag = document.querySelector("#textarea");
 
+// for setting 
+const settingButton = document.querySelector("#setting");
+
+const settingDiv = document.querySelector(".settingDiv")
+
+settingButton.addEventListener("click",() => {
+    console.log("kkk")
+    settingDiv.classList.toggle("show");
+})
+
 
 
 addTag.addEventListener("click",() => {
@@ -70,6 +80,7 @@ localStorage.setItem("save",JSON.stringify(mainArray));
 for (let i = 0; i < mainArray.length; i++) {
     const failNote = document.createElement("div");
     const failNoteClick = document.createElement("div");
+    const titleShowDiv =document.createElement("div")
     const innerNote = document.createElement("div");
     const innerNoteHead = document.createElement("div");
     const exitButton = document.createElement("button");
@@ -83,11 +94,15 @@ for (let i = 0; i < mainArray.length; i++) {
     failNote.classList.add("note");
     failNoteClick.classList.add("failNoteClick");
     innerNote.classList.add("innerNote");
+    innerNoteHead.classList.add("innerNoteHead");
     innerNoteBody.classList.add("readerView");
+    exitButton.classList.add("exitButton");
+    delButton.classList.add("deleteButton")
 
     // for append child
     showRoomTag.append(failNote);
     failNote.append(failNoteClick,innerNote);
+    failNoteClick.append(titleShowDiv)
     innerNote.append(innerNoteHead,innerNoteBody);
     innerNoteHead.append(exitButton,delButton);
 
@@ -95,7 +110,7 @@ for (let i = 0; i < mainArray.length; i++) {
     exitButton.innerText = "exit";
     delButton.innerText = "delete";
     innerNoteBody.innerHTML =mainArray[i].text;
-    failNoteClick.innerText = mainArray[i].title;
+    titleShowDiv.innerText = mainArray[i].title;
 
     // for click 
 

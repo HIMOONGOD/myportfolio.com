@@ -10,7 +10,14 @@
 <body>
     <div id="main">
         <div id="addButtonDiv">
-            <button id="addButton" class="addButton">Add note</button>
+            <div class="innerAddButtonDiv">
+                <button id="addButton" class="addButton">Add note</button>
+                <div id="setting">
+                    <img  title="setting" src="material-symbols_menu-rounded.svg" />
+                </div>
+                
+            </div>
+            
         </div>
         <div id="noteShowRoom"></div>
     </div>
@@ -20,6 +27,9 @@
             <input id="titleName" placeholder="write Title" value="note"/>
         </div>
         <textarea id="textarea" class="textarea" placeholder="write something"></textarea>
+    </div>
+    <div class="settingDiv">
+        
     </div>
 <script src="index.js"></script>
 </body>
