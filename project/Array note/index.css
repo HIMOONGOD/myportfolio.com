@@ -96,6 +96,7 @@ html,body {
     background-color: #4C6C6E;
 }
 
+
 .exitButton {
     width: 100px;
 }
@@ -110,6 +111,7 @@ html,body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
     padding: 20px;
+    font-size: 15px;
     
 }
 
@@ -140,7 +142,7 @@ html,body {
     height: 100%;
     box-sizing: border-box;
     padding: 20px;
-    font-size: 2em;
+    font-size: 15px;
 }
 
 /* for setting */
@@ -152,6 +154,12 @@ html,body {
     top: 0;
     left: 0;
     display: none;
+}
+
+
+/* font size */
+.font {
+    font-size: 15px;
 }
 /* for show display */
 

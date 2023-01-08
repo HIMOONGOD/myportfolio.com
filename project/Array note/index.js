@@ -26,10 +26,43 @@ const textareaTag = document.querySelector("#textarea");
 // for setting 
 const settingButton = document.querySelector("#setting");
 
-const settingDiv = document.querySelector(".settingDiv")
+const settingDiv = document.querySelector(".settingDiv");
+
+// for change font size
+
+const changeFontSize = document.querySelector("#fontSize");
+
+const getFont = localStorage.getItem("font");
+
+// for setting div event listen
+
+
+// settingDiv.addEventListener("focusin",() => {
+//     settingDiv.classList.add("show");
+// })
+
+
+settingDiv.addEventListener("mouseleave",() => {
+    settingDiv.classList.remove("show");
+})
+
+changeFontSize.value = getFont;
+
+console.log(getFont)
 
 settingButton.addEventListener("click",() => {
-    console.log("kkk")
+    console.log(changeFontSize.value);
+    
+    localStorage.setItem("font",changeFontSize.value);
+    const innerNotFont = document.getElementsByTagName("textarea");
+    for (let j = 0; j < innerNotFont.length; j++) {
+        innerNotFont[j].style.fontSize = getFont;
+        
+    }
+    textareaTag.style.fontSize = changeFontSize.value;
+    
+    // innerNotFont.classList.add("font")
+    console.log();
     settingDiv.classList.toggle("show");
 })
 
@@ -52,7 +85,6 @@ saveAndExitTag.addEventListener("click",() => {
     console.log(textareaTag.value);
     mainArray.push({title:`${title}`,text:`${text}`});
     writeTag.classList.remove("show");
-    console.log(mainArray);
     showRoomTag.innerHTML = "";
 
     
@@ -119,6 +151,9 @@ for (let i = 0; i < mainArray.length; i++) {
     })
     
     exitButton.addEventListener("click",(event) => {
+         
+
+
         innerNote.classList.remove("show");
         title = mainArray[i].title;
         textA = "";
@@ -130,16 +165,17 @@ for (let i = 0; i < mainArray.length; i++) {
 
     // for delete button
     delButton.addEventListener("click", (event) => {
-        console.log(mainArray.length)
-        
-         mainArray.splice(i,1);
-
+        mainArray.splice(i,1);
         localStorage.setItem("save",JSON.stringify(mainArray))
         reloadCall();
         innerNote.classList.remove("show");
-        console.log(mainArray)
     })
 
+    const innerNotFont = document.getElementsByTagName("textarea");
+        for (let j = 0; j < innerNotFont.length; j++) {
+            innerNotFont[j].style.fontSize = changeFontSize.value;
+            
+        }
     
 }
 }
@@ -158,6 +194,7 @@ reload();
 
 const reloadCall = () => {
     showRoomTag.innerHTML = "";
+    
      reload()
 }
 // setInterval(() => {
