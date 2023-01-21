@@ -114,7 +114,6 @@ h1 {
 }
 
 .fatherCardDiv {
-  position: relative;
   width: 200px;
   height: 100%;
   
@@ -213,5 +212,11 @@ h1 {
 
   .h1 {
     font-size: 25px;
+  }
+
+  .projectRoom {
+    height: max-content;
+    align-items: center;
+    flex-direction: column;
   }
 }
