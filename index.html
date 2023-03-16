@@ -1,91 +1,56 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>myportfolio</title>
-    
-    <script src="jquery-3.6.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="fatherMoon">
-      </div>
-      <div id="moon"></div>
-      <div class="aDiv">
-        <a class="hrefLink" href="#Home">Home</a>
-        <a class="hrefLink" href="#sendEmail">Contact Me</a>
-      </div>
-    </header>
-    <div class="mainDiv" id="Home">
-      <div class="FirstContainer">
-        <div class="FirstChild1">
-          <h1 class="h1">Hi , I'm <span class="autoType"></span></h1>
-          <p class="p1">I am Newbie web programmer.</p>
+<html lang="en">
 
-          <a href="#sendEmail"><button>contact me</button></a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+
+</head>
+
+<body>
+    <div>
+        <div class="home">
+            <header id="header" class="displayflex">
+                <div class="headBox1">
+                    <img id="logo" src="sources/Lamin.svg" title="lamin" />
+                </div>
+                <div class="headBox2 displayflex">
+                    <div class="Ahover"><a class="a">Home</a></div>
+                    <div class="Ahover"><a class="a">Work</a></div>
+                    <div class="Ahover"><a class="a">Contact</a></div>
+                </div>
+
+            </header>
+            <div class="homeMainBox displayflex">
+                <div class="homeMainBoxChild1 displayflex">
+                    <div class="imgTraigle">
+                        <img id="myphoto" title="myphoto" src="sources/myphoto.png" />
+                    </div>
+                </div>
+                <div class="homeMainBoxChild2">
+                    <div class="displayflex flexcoloum fade-in-down">
+                        <h1>Hi! I'm </h1>
+                        <span>Myo Lamin Maung</span>
+                        <div class="typeBox">
+                            <p class="typing-text">Junior web developer and designer |</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="FirstChild2">
-          
+        <div class="projectRoom">
+
         </div>
-      </div>
-
-      <div class="projectRoom">
-        <div class="fatherCardDiv">
-          <a class="gotoProject" href="project/coffeeShop/Ui1.html">
-            <div class="projectCard">
-            <img class="tumNail" alt="" src="src/coffee.jpg" />
-            <div class="pcardBody">Moon coffee shop</div>
-          </div>
-          </a>
-          
-        </div>
-        <div class="fatherCardDiv">
-          <a class="gotoProject" href="project/Array note/index.html">
-            <div class="projectCard">
-            <img class="tumNail" alt="" src="src/coffee.jpg" />
-            <div class="pcardBody">My Note</div>
-          </div>
-          </a>
-        </div>
-        <div class="fatherCardDiv">
-          <a class="gotoProject" href="project/Formation PJ/index.html">
-            <div class="projectCard">
-            <img class="tumNail" alt="" src="src/coffee.jpg" />
-            <div class="pcardBody">Single website</div>
-          </div>
-          </a>
-        </div>
-        </div>
-        
-
-      </div>
-
-
-
-      <div class="summary">
-        <p>
-          My name is myo la min. I am beginner web programmer. I start learing
-          programming in 8/1/2022.
-        </p>
-        <p>!!This portfoilo is just for fun</p>
-        <p>portfoilo version 1.4</p>
-      </div>
-
-      <!--      -->
     </div>
+    
 
-    <div id="footerDiv"></div>
-    
-    
-    
-    <script src="javascript.js"></script>
-    <script >
-      // $("#moon").hide(3000)
-    </script>
-  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <Script>
+    </Script>
+    <script src="index.js"></script>
+</body>
+
 </html>
