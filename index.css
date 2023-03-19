@@ -14,6 +14,7 @@ html,body {
 
 .Main {
     position: static;
+    scroll-behavior: smooth;
 }
 
 .home {
@@ -168,6 +169,12 @@ header {
     background-color: #2C3E50;
     border: 2px solid rgb(244, 234, 234);
     transition: transform 0.5s ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10%;
+    background-attachment: local;
+    text-align: center;
+    color: #fff;
 }
 
 .projectCard:hover {
