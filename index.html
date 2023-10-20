@@ -2,55 +2,142 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
-
+  <meta charset="UTF-8" />
+  <meta name="theme-color" content="#673AB6" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link href="index.css" rel="stylesheet" />
+  
 </head>
 
-<body>
-    <div class="Main">
-        <div class="home">
-            <header id="header" class="displayflex">
-                <div class="headBox1">
-                    <img id="logo" src="sources/Lamin.svg" title="lamin" />
-                </div>
-                <div class="headBox2 displayflex">
-                    <div class="Ahover"><a class="a">Home</a></div>
-                    <div class="Ahover"><a href="#projectRoom" class="a">Work</a></div>
-                    <div class="Ahover"><a class="a">Contact</a></div>
-                </div>
-
-            </header>
-            <div class="homeMainBox displayflex">
-                <div class="homeMainBoxChild1 displayflex">
-                    <div class="imgTraigle">
-                        <img id="myphoto" title="myphoto" src="sources/myphoto.png" />
-                    </div>
-                </div>
-                <div class="homeMainBoxChild2">
-                    <div class="displayflex flexcoloum fade-in-down">
-                        <h1>Hi! I'm </h1>
-                        <span>Myo Lamin Maung</span>
-                        <div class="typeBox">
-                            <p class="typing-text">Junior web developer and designer |</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<body id="body" class="fullHeight">
+  <div class="container">
+    <header class="col-12 d-flex pt-3 pb-3">
+      <div id="logo" class="col-6 text-white">laminmaung</div>
+      <div class="right-header col-6 text-white d-flex">
+        <div class="header-left d-flex col-sm-3">
+          <img title="facebook-icon" src="src/ic_baseline-facebook.png" />
+          <img class="git-icon" title="git-icon" src="src/mdi_github.png" />
         </div>
-        <div id="projectRoom" class="projectRoom">
-            <!-- for project card -->
+      </div>
+    </header>
+    <div id="h-content" class="d-flex row">
+      <div class="left-h-content col-sm-6 text-white">
+        <h2 class="">Nice to meet you!</h2>
+        <h2 class="Iam">I'am <span id="nameSpan">Myo Laminmaung.</span></h2>
+        <p class="font-weight-light">I am junior web developer.</p>
+        <button class="cont-b text-white sC-b">Contact me!</button>
+       
+      </div>
+      <div class="right-h-content col-sm-6">
+        <div class="triangle">
+          <img id="myphoto" title="စောက်ချောကြီးပုံ" src="src/Group 2.png" />
         </div>
+      </div>
     </div>
-    
+    <div class="card">
+      <!-- just a line -->
+    </div>
+    <div class="text-white d-flex justify-content-center mt-5">
+      <h1 class="sC">My professions</h1>
+    </div>
+    <div id="mySkill">
+      <div class="row">
+        <div class="col-sm-6 text-white skill mt-3 mb-2">
+          <h1 data-bs-toggle="collapse" data-bs-target="#demo">My Html</h1>
+          <div id="demo" class="collapse hide showAnimation">
+            <p>If you're looking for a developer who can bring
+              your web projects to the next level with professional HTML skills,
+              I invite you to explore my portfolio. It's a testament to the diversity
+              and quality of my work. Each project reflects my commitment to excellence in
+              HTML development.
+            </p>
+            <div>
+              <div class="progress">
+                <div class="progress-bar pg1 text-dark" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100">Html progress</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 text-white skill mt-3 mb-2">
+          <h1 data-bs-toggle="collapse" data-bs-target="#css">My Css</h1>
+          <div id="css" class="collapse hide showAnimation">
+            <p>As a budding web developer, I've embarked on an exciting 
+              journey to harness the power of CSS and create visually appealing, 
+              responsive web experiences. My skills, though at the junior level, 
+              lay a solid foundation for web design, 
+              and I'm enthusiastic about the possibilities that lie ahead.
+            </p>
+            <div>
+              <div class="progress">
+                <div class="progress-bar pg2 sC-b" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100">CSS progress</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <!-- just a line -->
+    </div>
+    <div id="project row">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <div>
+            <div class="card-holder d-flex justify-content-center align-items-center mt-5">
+              <div class="project-card-holder p1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <Script>
-    </Script>
-    <script src="index.js"></script>
+              </div>
+            </div>
+            <h3 class="text-white">cafe system</h3>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div>
+            <div class="card-holder d-flex justify-content-center align-items-center mt-5">
+              <div class="project-card-holder">card</div>
+            </div>
+            <h3>lamin</h3>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div>
+            <div class="card-holder d-flex justify-content-center align-items-center mt-5">
+              <div class="project-card-holder">card</div>
+            </div>
+            <h3>lamin</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+  <div id="loader" class="loader">
+    <button class="btn btn-primary">
+      <span class="spinner-border spinner-border-sm"></span>
+      Loading..
+    </button>
+  </div>
+  <script src="index.js"></script>
+  <script>
+    // for loading page
+    window.addEventListener("load", () => {
+      const loaderTag = document.getElementById("loader");
+      const bodyTag = document.getElementById("body");
+      loaderTag.classList.add("remove-loader");
+      bodyTag.classList.remove("fullHeight");
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
