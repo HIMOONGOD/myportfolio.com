@@ -128,6 +128,14 @@ header {
 
 /* for skill box */
 
+#Mypro {
+
+}
+
+#Mypro:hover {
+    opacity: 0.8;
+}
+
 .skill {
     
 }
